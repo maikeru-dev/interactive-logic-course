@@ -9,15 +9,26 @@ Note, you need the following dependencies:
 * opam (OCaml package manager)
 * make
 
+``sudo pacman -S opam make``
 
 **Linux** (bash/zsh):
 
 This will first create a local installation of Ocaml in this project, then install all the project dependencies, then ``make`` will translate all the pages from Markdown to HTML, build the ``frontend.js`` file that implements all the interactive bits and copy the fixed assets (CSS, PDFs etc) in to a directory called ``_site`` which will be a local copy of the notes.
 
-1. ``opam switch create . 5.1.0``
-2. ``opam intall . --deps-only``
-3. ``make``
+*This will clone a repo which directs to a fork of the original repo, remember to amend this later!*
+```
+git clone https://github.com/maikeru-dev/interactive-logic-course/ 
+opam switch create . 5.1.0
+opam install . --deps-only
+make
+```
 
+
+One-liner:
+
+```
+git clone https://github.com/maikeru-dev/interactive-logic-course/ && cd interactive-logic-course && opam switch create . 5.1.0 && opam install . --deps-only && make
+```
 
 
 ## Developement
