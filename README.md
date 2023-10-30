@@ -9,7 +9,19 @@ Note, you need the following dependencies:
 * opam (OCaml package manager)
 * make
 
-``sudo pacman -S opam make``
+E.g. **Arch**:
+
+```
+sudo pacman -S opam make
+```
+
+**All UNIX**:
+
+If this is your first time using opam, then run:
+```
+opam init
+```
+
 
 **Linux** (bash/zsh):
 
@@ -17,7 +29,8 @@ This will first create a local installation of Ocaml in this project, then insta
 
 *This will clone a repo which directs to a fork of the original repo, remember to amend this later!*
 ```
-git clone https://github.com/maikeru-dev/interactive-logic-course/ 
+git clone https://github.com/maikeru-dev/interactive-logic-course/
+cd interactive-logic-course 
 opam switch create . 5.1.0
 opam install . --deps-only
 make
