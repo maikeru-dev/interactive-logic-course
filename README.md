@@ -48,7 +48,7 @@ git clone https://github.com/maikeru-dev/interactive-logic-course/ && cd interac
 
 Libaries used: 
 * [Ulmus](https://github.com/bobatkey/ulmus)
-
+* [js_of_ocaml](https://github.com/ocsigen/js_of_ocaml)
 
 ## Goals
 * Implement [CodeMirror](https://codemirror.net/) as a replacement for the code editors
